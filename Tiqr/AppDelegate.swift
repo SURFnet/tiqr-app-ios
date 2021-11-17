@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         center.requestAuthorization(options: [.alert, .sound]) { granted, error in
             if let error = error {
                 print(error.localizedDescription)
-            } else {
+            } else if granted {
                 DispatchQueue.main.async {
                     UIApplication.shared.registerForRemoteNotifications()
                 }
