@@ -25,6 +25,7 @@
 		0A0D74CF273C127300DDD346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A0D74D1273C127300DDD346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A9F8D42274F831D00F24188 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		0A9F8D6C274F9AC600F24188 /* tiqr-app-core-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "tiqr-app-core-ios"; path = "../tiqr-app-core-ios"; sourceTree = "<group>"; };
 		0AC5807C273D4CF400364044 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AC5807D273D4CF400364044 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AC5807E273D4CF400364044 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		0A0D74B7273C127100DDD346 = {
 			isa = PBXGroup;
 			children = (
+				0A9F8D6B274F9AC600F24188 /* Packages */,
 				0A0D74C2273C127100DDD346 /* Tiqr */,
 				0A0D74C1273C127100DDD346 /* Products */,
 				0A0D74DE273C13CD00DDD346 /* Frameworks */,
@@ -92,6 +94,14 @@
 				0ACDBDB52743B2510057FE7F /* UserNotifications.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A9F8D6B274F9AC600F24188 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				0A9F8D6C274F9AC600F24188 /* tiqr-app-core-ios */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 		0AC58079273D4CF400364044 /* Resources */ = {

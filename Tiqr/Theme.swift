@@ -31,9 +31,17 @@ import UIKit
 import TiqrCore
 
 final class Theme: TiqrThemeType {
-    let brandColor: UIColor = UIColor(red: 138/255.0, green: 166/255.0, blue: 24/255.0, alpha: 1)
-    let headerFont: UIFont = UIFont.boldSystemFont(ofSize: 16)
-    let bodyFont: UIFont = UIFont.systemFont(ofSize: 14)
-    let aboutLogo: UIImage? = UIImage(named: "tiqr-logo")
-    let headerLogo: UIImage? = UIImage(named: "tiqr-header")
+    let primaryColor: UIColor = UIColor(named: "PrimaryColor")!
+
+    let headerFont: UIFont = .systemFont(ofSize: 22)
+    let bodyBoldFont: UIFont = .boldSystemFont(ofSize: 16)
+    let bodyFont: UIFont = .boldSystemFont(ofSize: 14)
+
+    let buttonFont: UIFont = .systemFont(ofSize: 14)
+    let buttonTintColor: UIColor = .black
+    let buttonBackgroundColor: UIColor = UIColor(named: "PrimaryColor")!
+
+    let aboutIcon: UIImage? = UIImage(named: "tiqr-logo")
+    let topBarIcon: UIImage? = UIImage(named: "surf-logo")
+    let bottomBarIcon: UIImage? = UIImage(named: "surf-logo")
 }
