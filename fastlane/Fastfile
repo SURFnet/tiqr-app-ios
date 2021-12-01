@@ -71,14 +71,14 @@ platform :ios do
 
     increment_build_number(
       build_number: commit_date + "." + ENV['GITHUB_RUN_NUMBER'],
-      xcodeproj: "Tiqr.xcodeproj"
+      xcodeproj: "Tiqr Client.xcodeproj"
     )
   end
   
   def build(config_name: "App Store", method_name: "app-store", profile_type: "App Store")
     build_app(
-      workspace: "Tiqr.xcworkspace", 
-      scheme: "Tiqr",
+      workspace: "Tiqr Client.xcworkspace", 
+      scheme: "Tiqr Client",
       configuration: config_name,
       export_options: {
         method: method_name,
