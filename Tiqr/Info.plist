@@ -36,28 +36,28 @@
 			</array>
 		</dict>
 	</dict>
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleTypeRole</key>
-            <string>Editor</string>
-            <key>CFBundleURLName</key>
-            <string>org.tiqr.surfnet.auth</string>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>tiqrauth</string>
-            </array>
-        </dict>
-        <dict>
-            <key>CFBundleTypeRole</key>
-            <string>Editor</string>
-            <key>CFBundleURLName</key>
-            <string>org.tiqr.surfnet.enroll</string>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>tiqrenroll</string>
-            </array>
-        </dict>
-    </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>org.tiqr.surfnet.auth</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tiqrauth</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>org.tiqr.surfnet.enroll</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tiqrenroll</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
