@@ -42,6 +42,6 @@ final class Theme: TiqrThemeType {
     let buttonBackgroundColor: UIColor = UIColor(named: "PrimaryColor")!
 
     let aboutIcon: UIImage? = UIImage(named: "tiqr-logo")
-    let topBarIcon: UIImage? = UIImage(named: "surf-logo")
+    let topBarIcon: UIImage? = UIImage(named: "tiqr-logo")
     let bottomBarIcon: UIImage? = UIImage(named: "surf-logo")
 }
