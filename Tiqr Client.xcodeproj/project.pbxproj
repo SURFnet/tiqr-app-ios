@@ -15,6 +15,7 @@
 		0A9F8D43274F831D00F24188 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F8D42274F831D00F24188 /* Theme.swift */; };
 		0AC5808A273D4CF400364044 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AC5807B273D4CF400364044 /* InfoPlist.strings */; };
 		0ACDBDB62743B2510057FE7F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACDBDB52743B2510057FE7F /* UserNotifications.framework */; };
+		0AFB380327B2C396004DCE22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB380527B2C396004DCE22 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,9 @@
 		0AC58089273D4CF400364044 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0ACDBDB42743B0A40057FE7F /* Tiqr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tiqr.entitlements; sourceTree = "<group>"; };
 		0ACDBDB52743B2510057FE7F /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		0AFB380027B2984D004DCE22 /* tiqr-app-core-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "tiqr-app-core-ios"; path = "../tiqr-app-core-ios"; sourceTree = "<group>"; };
+		0AFB380427B2C396004DCE22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0AFB380627B2C39B004DCE22 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		0A9F8D6B274F9AC600F24188 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				0AFB380027B2984D004DCE22 /* tiqr-app-core-ios */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 		0AC5807A273D4CF400364044 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				0AFB380527B2C396004DCE22 /* Localizable.strings */,
 				0AC5807B273D4CF400364044 /* InfoPlist.strings */,
 			);
 			path = General;
@@ -199,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0D74D0273C127300DDD346 /* LaunchScreen.storyboard in Resources */,
+				0AFB380327B2C396004DCE22 /* Localizable.strings in Resources */,
 				0AC5808A273D4CF400364044 /* InfoPlist.strings in Resources */,
 				0A0D74CD273C127300DDD346 /* Assets.xcassets in Resources */,
 			);
@@ -247,6 +254,15 @@
 				0AC58089273D4CF400364044 /* hr */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0AFB380527B2C396004DCE22 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AFB380427B2C396004DCE22 /* en */,
+				0AFB380627B2C39B004DCE22 /* nl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -518,7 +534,7 @@
 				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tiqr/Info.plist;
-                INFOPLIST_KEY_CFBundleDisplayName = "Tiqr Test";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tiqr Test";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
