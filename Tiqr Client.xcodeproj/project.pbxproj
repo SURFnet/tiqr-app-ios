@@ -42,7 +42,6 @@
 		0AC58089273D4CF400364044 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0ACDBDB42743B0A40057FE7F /* Tiqr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tiqr.entitlements; sourceTree = "<group>"; };
 		0ACDBDB52743B2510057FE7F /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		0AFB380027B2984D004DCE22 /* tiqr-app-core-ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "tiqr-app-core-ios"; path = "../tiqr-app-core-ios"; sourceTree = "<group>"; };
 		0AFB380427B2C396004DCE22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0AFB380627B2C39B004DCE22 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +101,6 @@
 		0A9F8D6B274F9AC600F24188 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				0AFB380027B2984D004DCE22 /* tiqr-app-core-ios */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
