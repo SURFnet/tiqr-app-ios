@@ -681,7 +681,7 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		0A53D0852756B3A700DB45FA /* XCRemoteSwiftPackageReference "tiqr-app-core-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SURFnet/tiqr-app-core-ios";
+			repositoryURL = "https://github.com/Tiqr/tiqr-app-core-ios";
 			requirement = {
 				branch = develop;
 				kind = branch;
