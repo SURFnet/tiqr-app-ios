@@ -62,7 +62,6 @@
 		0A0D74B7273C127100DDD346 = {
 			isa = PBXGroup;
 			children = (
-				0A9F8D6B274F9AC600F24188 /* Packages */,
 				0A0D74C2273C127100DDD346 /* Tiqr */,
 				0A0D74C1273C127100DDD346 /* Products */,
 				0A0D74DE273C13CD00DDD346 /* Frameworks */,
@@ -98,13 +97,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0A9F8D6B274F9AC600F24188 /* Packages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Packages;
-			sourceTree = "<group>";
-		};
 		0AC58079273D4CF400364044 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +126,7 @@
 				0A0D74BC273C127100DDD346 /* Sources */,
 				0A0D74BD273C127100DDD346 /* Frameworks */,
 				0A0D74BE273C127100DDD346 /* Resources */,
+				C773FF2E29265E1B00A82451 /* Set Git Release Version */,
 			);
 			buildRules = (
 			);
@@ -210,6 +203,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C773FF2E29265E1B00A82451 /* Set Git Release Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Git Release Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\ngit=$(sh /etc/profile; which git)\ngit_release_version=$(\"$git\" describe --tags --always)\n\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\n\nfor plist in \"$target_plist\"; do\n  if [ -f \"$plist\" ]; then\n    /usr/libexec/PlistBuddy -c \"Add :TIQRGitReleaseVersion String $git_release_version\" \"$plist\"\n  fi\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A0D74BC273C127100DDD346 /* Sources */ = {
