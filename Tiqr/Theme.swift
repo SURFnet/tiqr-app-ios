@@ -40,6 +40,8 @@ final class Theme: TiqrThemeType {
     let buttonFont: UIFont = .systemFont(ofSize: 16)
     let buttonTintColor: UIColor = .black
     let buttonBackgroundColor: UIColor = UIColor(named: "PrimaryColor")!
+    let secondaryButtonTintColor: UIColor = .black
+    let secondaryButtonBackgroundColor: UIColor = UIColor(named: "SecondaryColor")!
 
     let aboutIcon: UIImage? = UIImage(named: "tiqr-logo")
     let topBarIcon: UIImage? = UIImage(named: "tiqr-logo")
