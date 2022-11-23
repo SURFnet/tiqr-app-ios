@@ -44,6 +44,7 @@
 		0ACDBDB52743B2510057FE7F /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		0AFB380427B2C396004DCE22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0AFB380627B2C39B004DCE22 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C798E99C292E127600423577 /* tiqr-app-core-ios */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "tiqr-app-core-ios"; path = "../tiqr-app-core-ios"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		0A0D74B7273C127100DDD346 = {
 			isa = PBXGroup;
 			children = (
+				C798E99B292E127600423577 /* Packages */,
 				0A0D74C2273C127100DDD346 /* Tiqr */,
 				0A0D74C1273C127100DDD346 /* Products */,
 				0A0D74DE273C13CD00DDD346 /* Frameworks */,
@@ -114,6 +116,14 @@
 				0AC5807B273D4CF400364044 /* InfoPlist.strings */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		C798E99B292E127600423577 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C798E99C292E127600423577 /* tiqr-app-core-ios */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +232,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\ngit=$(sh /etc/profile; which git)\ngit_release_version=$(\"$git\" describe --tags --always)\n\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\n\nfor plist in \"$target_plist\"; do\n  if [ -f \"$plist\" ]; then\n    /usr/libexec/PlistBuddy -c \"Add :TIQRGitReleaseVersion String $git_release_version\" \"$plist\"\n  fi\ndone\n";
+			shellScript = "#!/bin/bash\n\ngit=$(sh /etc/profile; which git)\ngit_release_version=$(\"$git\" describe --tags --always)\n\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\n\necho \"git_release_version: $git_release_version\" \n\nfor plist in \"$target_plist\"; do\n  if [ -f \"$plist\" ]; then\n    /usr/libexec/PlistBuddy -c \"Add :TIQRGitReleaseVersion String $git_release_version\" \"$plist\"\n    echo \"Did add: $git_release_version to $plist\" \n  fi\ndone\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
