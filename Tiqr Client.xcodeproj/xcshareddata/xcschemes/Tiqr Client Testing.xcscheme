@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A0D74BF273C127100DDD346"
-               BuildableName = "Tiqr Client.app"
+               BuildableName = "TiqrClient.app"
                BlueprintName = "Tiqr Client"
                ReferencedContainer = "container:Tiqr Client.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A0D74BF273C127100DDD346"
-            BuildableName = "Tiqr Client.app"
+            BuildableName = "TiqrClient.app"
             BlueprintName = "Tiqr Client"
             ReferencedContainer = "container:Tiqr Client.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A0D74BF273C127100DDD346"
-            BuildableName = "Tiqr Client.app"
+            BuildableName = "TiqrClient.app"
             BlueprintName = "Tiqr Client"
             ReferencedContainer = "container:Tiqr Client.xcodeproj">
          </BuildableReference>
