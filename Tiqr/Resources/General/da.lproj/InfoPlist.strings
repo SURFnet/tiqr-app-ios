@@ -6,5 +6,5 @@
   Copyright © 2016 Egeniq. All rights reserved.
 */
 
-NSCameraUsageDescription = "Tigr bruger kameraet til at skanne QR-koder";
+NSCameraUsageDescription = "Tiqr bruger kameraet til at skanne QR-koder";
 NSFaceIDUsageDescription = "Tiqr bruger ansigtsgenkendelse til indlogning uden PIN-kode";
