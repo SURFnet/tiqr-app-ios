@@ -1,4 +1,4 @@
-#  Tiqr
+# Tiqr
 
 ## Localizing Tiqr
 

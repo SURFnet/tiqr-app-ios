@@ -164,7 +164,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					0A0D74BF273C127100DDD346 = {
 						CreatedOnToolsVersion = 13.0;
@@ -747,7 +747,7 @@
 			repositoryURL = "https://github.com/Tiqr/tiqr-app-core-ios";
 			requirement = {
 				kind = revision;
-				revision = 76284c1842558564efe439a762648d294108b211;
+				revision = b4fa942f4b21fd7655f04fb5ff3ada9049e0176e;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
