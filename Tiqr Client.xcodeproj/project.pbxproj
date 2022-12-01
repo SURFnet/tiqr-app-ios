@@ -56,6 +56,8 @@
 		C7AF85AC292FCB4500BDEB69 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7AF85AD292FCB4500BDEB69 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7AF85AE292FCB4600BDEB69 /* fy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fy; path = fy.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7F601692938B1E600AF2FFF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C7F6016A2938B20A00AF2FFF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,8 @@
 		0A0D74B7273C127100DDD346 = {
 			isa = PBXGroup;
 			children = (
+				C7F601692938B1E600AF2FFF /* LICENSE */,
+				C7F6016A2938B20A00AF2FFF /* README.md */,
 				0A0D74C2273C127100DDD346 /* Tiqr */,
 				0A0D74C1273C127100DDD346 /* Products */,
 				0A0D74DE273C13CD00DDD346 /* Frameworks */,
@@ -743,7 +747,7 @@
 			repositoryURL = "https://github.com/Tiqr/tiqr-app-core-ios";
 			requirement = {
 				kind = revision;
-				revision = 0df261306c7601599a9cbc65380090ef6204ec40;
+				revision = 76284c1842558564efe439a762648d294108b211;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
