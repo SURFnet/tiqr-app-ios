@@ -16,7 +16,18 @@
 		0AC5808A273D4CF400364044 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AC5807B273D4CF400364044 /* InfoPlist.strings */; };
 		0ACDBDB62743B2510057FE7F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACDBDB52743B2510057FE7F /* UserNotifications.framework */; };
 		0AFB380327B2C396004DCE22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB380527B2C396004DCE22 /* Localizable.strings */; };
+		C7F8388F294264C7002015A8 /* TiqrClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8388E294264C7002015A8 /* TiqrClientTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7F83890294264C7002015A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A0D74B8273C127100DDD346 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A0D74BF273C127100DDD346;
+			remoteInfo = "Tiqr Client";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0A0D74C0273C127100DDD346 /* TiqrClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiqrClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +69,8 @@
 		C7AF85AE292FCB4600BDEB69 /* fy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fy; path = fy.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7F601692938B1E600AF2FFF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C7F6016A2938B20A00AF2FFF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C7F8388C294264C7002015A8 /* TiqrClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiqrClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F8388E294264C7002015A8 /* TiqrClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiqrClientTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +83,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7F83889294264C7002015A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +99,7 @@
 				C7F601692938B1E600AF2FFF /* LICENSE */,
 				C7F6016A2938B20A00AF2FFF /* README.md */,
 				0A0D74C2273C127100DDD346 /* Tiqr */,
+				C7F8388D294264C7002015A8 /* TiqrClientTests */,
 				0A0D74C1273C127100DDD346 /* Products */,
 				0A0D74DE273C13CD00DDD346 /* Frameworks */,
 			);
@@ -88,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0D74C0273C127100DDD346 /* TiqrClient.app */,
+				C7F8388C294264C7002015A8 /* TiqrClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +154,14 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		C7F8388D294264C7002015A8 /* TiqrClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7F8388E294264C7002015A8 /* TiqrClientTests.swift */,
+			);
+			path = TiqrClientTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +186,24 @@
 			productReference = 0A0D74C0273C127100DDD346 /* TiqrClient.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C7F8388B294264C7002015A8 /* TiqrClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F83892294264C7002015A8 /* Build configuration list for PBXNativeTarget "TiqrClientTests" */;
+			buildPhases = (
+				C7F83888294264C7002015A8 /* Sources */,
+				C7F83889294264C7002015A8 /* Frameworks */,
+				C7F8388A294264C7002015A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7F83891294264C7002015A8 /* PBXTargetDependency */,
+			);
+			name = TiqrClientTests;
+			productName = TiqrClientTests;
+			productReference = C7F8388C294264C7002015A8 /* TiqrClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,12 +211,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					0A0D74BF273C127100DDD346 = {
 						CreatedOnToolsVersion = 13.0;
 						LastSwiftMigration = 1300;
+					};
+					C7F8388B294264C7002015A8 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 0A0D74BF273C127100DDD346;
 					};
 				};
 			};
@@ -202,6 +254,7 @@
 			projectRoot = "";
 			targets = (
 				0A0D74BF273C127100DDD346 /* Tiqr Client */,
+				C7F8388B294264C7002015A8 /* TiqrClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,6 +268,13 @@
 				0AFB380327B2C396004DCE22 /* Localizable.strings in Resources */,
 				0AC5808A273D4CF400364044 /* InfoPlist.strings in Resources */,
 				0A0D74CD273C127300DDD346 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F8388A294264C7002015A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +313,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7F83888294264C7002015A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F8388F294264C7002015A8 /* TiqrClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7F83891294264C7002015A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A0D74BF273C127100DDD346 /* Tiqr Client */;
+			targetProxy = C7F83890294264C7002015A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0A0D74CE273C127300DDD346 /* LaunchScreen.storyboard */ = {
@@ -714,6 +790,86 @@
 			};
 			name = "Debug Test";
 		};
+		C7F83893294264C7002015A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet.TiqrClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiqrClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TiqrClient";
+			};
+			name = Debug;
+		};
+		C7F83894294264C7002015A8 /* Debug Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet.TiqrClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiqrClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TiqrClient";
+			};
+			name = "Debug Test";
+		};
+		C7F83895294264C7002015A8 /* Release Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet.TiqrClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiqrClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TiqrClient";
+			};
+			name = "Release Test";
+		};
+		C7F83896294264C7002015A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet.TiqrClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiqrClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TiqrClient";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -735,6 +891,17 @@
 				C77D49F3286F22940024C4A0 /* Debug Test */,
 				0A11A76C27479DEC0088BEAB /* Release Test */,
 				0A0D74D6273C127300DDD346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F83892294264C7002015A8 /* Build configuration list for PBXNativeTarget "TiqrClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F83893294264C7002015A8 /* Debug */,
+				C7F83894294264C7002015A8 /* Debug Test */,
+				C7F83895294264C7002015A8 /* Release Test */,
+				C7F83896294264C7002015A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
