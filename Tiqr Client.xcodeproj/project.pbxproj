@@ -15,7 +15,6 @@
 		0AC5808A273D4CF400364044 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AC5807B273D4CF400364044 /* InfoPlist.strings */; };
 		0ACDBDB62743B2510057FE7F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACDBDB52743B2510057FE7F /* UserNotifications.framework */; };
 		0AFB380327B2C396004DCE22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB380527B2C396004DCE22 /* Localizable.strings */; };
-		C7EB786D298404A500D91044 /* Tiqr in Frameworks */ = {isa = PBXBuildFile; productRef = C7EB786C298404A500D91044 /* Tiqr */; };
 		C7EB787029842EBD00D91044 /* Tiqr in Frameworks */ = {isa = PBXBuildFile; productRef = C7EB786F29842EBD00D91044 /* Tiqr */; };
 		C7F8388F294264C7002015A8 /* TiqrClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8388E294264C7002015A8 /* TiqrClientTests.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +67,6 @@
 		C7AF85AC292FCB4500BDEB69 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7AF85AD292FCB4500BDEB69 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7AF85AE292FCB4600BDEB69 /* fy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fy; path = fy.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C7EB786B2984046500D91044 /* tiqr-app-core-ios */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "tiqr-app-core-ios"; path = "../tiqr-app-core-ios"; sourceTree = "<group>"; };
 		C7F601692938B1E600AF2FFF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C7F6016A2938B20A00AF2FFF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C7F8388C294264C7002015A8 /* TiqrClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiqrClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7EB786D298404A500D91044 /* Tiqr in Frameworks */,
 				0ACDBDB62743B2510057FE7F /* UserNotifications.framework in Frameworks */,
 				C7EB787029842EBD00D91044 /* Tiqr in Frameworks */,
 			);
@@ -161,7 +158,6 @@
 		C770041A29796B3E00C622BE /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				C7EB786B2984046500D91044 /* tiqr-app-core-ios */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -192,7 +188,6 @@
 			);
 			name = "Tiqr Client";
 			packageProductDependencies = (
-				C7EB786C298404A500D91044 /* Tiqr */,
 				C7EB786F29842EBD00D91044 /* Tiqr */,
 			);
 			productName = Tiqr;
@@ -945,10 +940,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C7EB786C298404A500D91044 /* Tiqr */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Tiqr;
-		};
 		C7EB786F29842EBD00D91044 /* Tiqr */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C7EB786E29842EBD00D91044 /* XCRemoteSwiftPackageReference "tiqr-app-core-ios" */;

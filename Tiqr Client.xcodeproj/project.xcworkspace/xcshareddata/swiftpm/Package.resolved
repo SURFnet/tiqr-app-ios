@@ -1,0 +1,13 @@
+{
+  "pins" : [
+    {
+      "identity" : "tiqr-app-core-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Tiqr/tiqr-app-core-ios",
+      "state" : {
+        "revision" : "a723e8ed0a52c90fb864c3db039b8a485dd90f6e"
+      }
+    }
+  ],
+  "version" : 2
+}
