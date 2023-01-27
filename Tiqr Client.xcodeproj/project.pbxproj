@@ -11,11 +11,12 @@
 		0A0D74C6273C127100DDD346 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0D74C5273C127100DDD346 /* SceneDelegate.swift */; };
 		0A0D74CD273C127300DDD346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0D74CC273C127300DDD346 /* Assets.xcassets */; };
 		0A0D74D0273C127300DDD346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0D74CE273C127300DDD346 /* LaunchScreen.storyboard */; };
-		0A53D0872756B3A700DB45FA /* Tiqr in Frameworks */ = {isa = PBXBuildFile; productRef = 0A53D0862756B3A700DB45FA /* Tiqr */; };
 		0A9F8D43274F831D00F24188 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F8D42274F831D00F24188 /* Theme.swift */; };
 		0AC5808A273D4CF400364044 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AC5807B273D4CF400364044 /* InfoPlist.strings */; };
 		0ACDBDB62743B2510057FE7F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACDBDB52743B2510057FE7F /* UserNotifications.framework */; };
 		0AFB380327B2C396004DCE22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB380527B2C396004DCE22 /* Localizable.strings */; };
+		C7EB786D298404A500D91044 /* Tiqr in Frameworks */ = {isa = PBXBuildFile; productRef = C7EB786C298404A500D91044 /* Tiqr */; };
+		C7EB787029842EBD00D91044 /* Tiqr in Frameworks */ = {isa = PBXBuildFile; productRef = C7EB786F29842EBD00D91044 /* Tiqr */; };
 		C7F8388F294264C7002015A8 /* TiqrClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8388E294264C7002015A8 /* TiqrClientTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		C7AF85AC292FCB4500BDEB69 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7AF85AD292FCB4500BDEB69 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C7AF85AE292FCB4600BDEB69 /* fy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fy; path = fy.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7EB786B2984046500D91044 /* tiqr-app-core-ios */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "tiqr-app-core-ios"; path = "../tiqr-app-core-ios"; sourceTree = "<group>"; };
 		C7F601692938B1E600AF2FFF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C7F6016A2938B20A00AF2FFF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C7F8388C294264C7002015A8 /* TiqrClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiqrClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,8 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A53D0872756B3A700DB45FA /* Tiqr in Frameworks */,
+				C7EB786D298404A500D91044 /* Tiqr in Frameworks */,
 				0ACDBDB62743B2510057FE7F /* UserNotifications.framework in Frameworks */,
+				C7EB787029842EBD00D91044 /* Tiqr in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +99,7 @@
 		0A0D74B7273C127100DDD346 = {
 			isa = PBXGroup;
 			children = (
+				C770041A29796B3E00C622BE /* Packages */,
 				C7F601692938B1E600AF2FFF /* LICENSE */,
 				C7F6016A2938B20A00AF2FFF /* README.md */,
 				0A0D74C2273C127100DDD346 /* Tiqr */,
@@ -154,6 +158,14 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		C770041A29796B3E00C622BE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C7EB786B2984046500D91044 /* tiqr-app-core-ios */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		C7F8388D294264C7002015A8 /* TiqrClientTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,7 +192,8 @@
 			);
 			name = "Tiqr Client";
 			packageProductDependencies = (
-				0A53D0862756B3A700DB45FA /* Tiqr */,
+				C7EB786C298404A500D91044 /* Tiqr */,
+				C7EB786F29842EBD00D91044 /* Tiqr */,
 			);
 			productName = Tiqr;
 			productReference = 0A0D74C0273C127100DDD346 /* TiqrClient.app */;
@@ -247,7 +260,7 @@
 			);
 			mainGroup = 0A0D74B7273C127100DDD346;
 			packageReferences = (
-				0A53D0852756B3A700DB45FA /* XCRemoteSwiftPackageReference "tiqr-app-core-ios" */,
+				C7EB786E29842EBD00D91044 /* XCRemoteSwiftPackageReference "tiqr-app-core-ios" */,
 			);
 			productRefGroup = 0A0D74C1273C127100DDD346 /* Products */;
 			projectDirPath = "";
@@ -921,20 +934,24 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0A53D0852756B3A700DB45FA /* XCRemoteSwiftPackageReference "tiqr-app-core-ios" */ = {
+		C7EB786E29842EBD00D91044 /* XCRemoteSwiftPackageReference "tiqr-app-core-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Tiqr/tiqr-app-core-ios";
 			requirement = {
 				kind = revision;
-				revision = ae89c9aabead8dab444dfee7c2da01b916221457;
+				revision = a723e8ed0a52c90fb864c3db039b8a485dd90f6e;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0A53D0862756B3A700DB45FA /* Tiqr */ = {
+		C7EB786C298404A500D91044 /* Tiqr */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A53D0852756B3A700DB45FA /* XCRemoteSwiftPackageReference "tiqr-app-core-ios" */;
+			productName = Tiqr;
+		};
+		C7EB786F29842EBD00D91044 /* Tiqr */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C7EB786E29842EBD00D91044 /* XCRemoteSwiftPackageReference "tiqr-app-core-ios" */;
 			productName = Tiqr;
 		};
 /* End XCSwiftPackageProductDependency section */
