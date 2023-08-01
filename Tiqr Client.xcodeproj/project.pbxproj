@@ -71,6 +71,8 @@
 		C7F6016A2938B20A00AF2FFF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C7F8388C294264C7002015A8 /* TiqrClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiqrClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F8388E294264C7002015A8 /* TiqrClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiqrClientTests.swift; sourceTree = "<group>"; };
+		F55EFD3A2A790FEA001C03CD /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F55EFD3B2A790FEB001C03CD /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 				nl,
 				ro,
 				hr,
+				pl,
 			);
 			mainGroup = 0A0D74B7273C127100DDD346;
 			packageReferences = (
@@ -365,6 +368,7 @@
 				0AC58087273D4CF400364044 /* nl */,
 				0AC58088273D4CF400364044 /* ro */,
 				0AC58089273D4CF400364044 /* hr */,
+				F55EFD3B2A790FEB001C03CD /* pl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -386,6 +390,7 @@
 				C7AF85AC292FCB4500BDEB69 /* sl */,
 				C7AF85AD292FCB4500BDEB69 /* es */,
 				C7AF85AE292FCB4600BDEB69 /* fy */,
+				F55EFD3A2A790FEA001C03CD /* pl */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
