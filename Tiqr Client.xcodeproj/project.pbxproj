@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0D74C4273C127100DDD346 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0D74C3273C127100DDD346 /* AppDelegate.swift */; };
+		0A0D74C6273C127100DDD346 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0D74C5273C127100DDD346 /* SceneDelegate.swift */; };
+		0A0D74CD273C127300DDD346 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0D74CC273C127300DDD346 /* Assets.xcassets */; };
+		0A0D74D0273C127300DDD346 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0D74CE273C127300DDD346 /* LaunchScreen.storyboard */; };
+		0A9F8D43274F831D00F24188 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F8D42274F831D00F24188 /* Theme.swift */; };
+		0AC5808A273D4CF400364044 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AC5807B273D4CF400364044 /* InfoPlist.strings */; };
+		0ACDBDB62743B2510057FE7F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACDBDB52743B2510057FE7F /* UserNotifications.framework */; };
+		0AFB380327B2C396004DCE22 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB380527B2C396004DCE22 /* Localizable.strings */; };
+		C76C2EA8299266FF0027420D /* Tiqr in Frameworks */ = {isa = PBXBuildFile; productRef = C76C2EA7299266FF0027420D /* Tiqr */; };
+		C7F8388F294264C7002015A8 /* TiqrClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F8388E294264C7002015A8 /* TiqrClientTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7F83890294264C7002015A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A0D74B8273C127100DDD346 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A0D74BF273C127100DDD346;
+			remoteInfo = "Tiqr Client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A0D74C0273C127100DDD346 /* TiqrClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiqrClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0D74C3273C127100DDD346 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A0D74C5273C127100DDD346 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0A0D74CC273C127300DDD346 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A0D74CF273C127300DDD346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A0D74D1273C127300DDD346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9F8D42274F831D00F24188 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		0AC5807C273D4CF400364044 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC5807D273D4CF400364044 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC5807E273D4CF400364044 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC5807F273D4CF400364044 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC58080273D4CF400364044 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC58081273D4CF400364044 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC58082273D4CF400364044 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC58083273D4CF400364044 /* fy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fy; path = fy.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC58084273D4CF400364044 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC58085273D4CF400364044 /* sr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sr; path = sr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC58086273D4CF400364044 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC58087273D4CF400364044 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC58088273D4CF400364044 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC58089273D4CF400364044 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0ACDBDB42743B0A40057FE7F /* Tiqr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tiqr.entitlements; sourceTree = "<group>"; };
+		0ACDBDB52743B2510057FE7F /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		0AFB380427B2C396004DCE22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0AFB380627B2C39B004DCE22 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85A3292FCB3B00BDEB69 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85A4292FCB3D00BDEB69 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85A5292FCB3F00BDEB69 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85A6292FCB4100BDEB69 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85A7292FCB4100BDEB69 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85A8292FCB4200BDEB69 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85A9292FCB4300BDEB69 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85AA292FCB4300BDEB69 /* sr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sr; path = sr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85AB292FCB4400BDEB69 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85AC292FCB4500BDEB69 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85AD292FCB4500BDEB69 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7AF85AE292FCB4600BDEB69 /* fy */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fy; path = fy.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C7F601692938B1E600AF2FFF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C7F6016A2938B20A00AF2FFF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C7F8388C294264C7002015A8 /* TiqrClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiqrClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7F8388E294264C7002015A8 /* TiqrClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiqrClientTests.swift; sourceTree = "<group>"; };
+		F55EFD3A2A790FEA001C03CD /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F55EFD3B2A790FEB001C03CD /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A0D74BD273C127100DDD346 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACDBDB62743B2510057FE7F /* UserNotifications.framework in Frameworks */,
+				C76C2EA8299266FF0027420D /* Tiqr in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F83889294264C7002015A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0D74B7273C127100DDD346 = {
+			isa = PBXGroup;
+			children = (
+				C770041A29796B3E00C622BE /* Packages */,
+				C7F601692938B1E600AF2FFF /* LICENSE */,
+				C7F6016A2938B20A00AF2FFF /* README.md */,
+				0A0D74C2273C127100DDD346 /* Tiqr */,
+				C7F8388D294264C7002015A8 /* TiqrClientTests */,
+				0A0D74C1273C127100DDD346 /* Products */,
+				0A0D74DE273C13CD00DDD346 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0A0D74C1273C127100DDD346 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A0D74C0273C127100DDD346 /* TiqrClient.app */,
+				C7F8388C294264C7002015A8 /* TiqrClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A0D74C2273C127100DDD346 /* Tiqr */ = {
+			isa = PBXGroup;
+			children = (
+				0ACDBDB42743B0A40057FE7F /* Tiqr.entitlements */,
+				0A9F8D42274F831D00F24188 /* Theme.swift */,
+				0A0D74C3273C127100DDD346 /* AppDelegate.swift */,
+				0A0D74C5273C127100DDD346 /* SceneDelegate.swift */,
+				0AC58079273D4CF400364044 /* Resources */,
+				0A0D74D1273C127300DDD346 /* Info.plist */,
+			);
+			path = Tiqr;
+			sourceTree = "<group>";
+		};
+		0A0D74DE273C13CD00DDD346 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ACDBDB52743B2510057FE7F /* UserNotifications.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AC58079273D4CF400364044 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0A0D74CC273C127300DDD346 /* Assets.xcassets */,
+				0A0D74CE273C127300DDD346 /* LaunchScreen.storyboard */,
+				0AC5807A273D4CF400364044 /* General */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0AC5807A273D4CF400364044 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				0AFB380527B2C396004DCE22 /* Localizable.strings */,
+				0AC5807B273D4CF400364044 /* InfoPlist.strings */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C770041A29796B3E00C622BE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		C7F8388D294264C7002015A8 /* TiqrClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7F8388E294264C7002015A8 /* TiqrClientTests.swift */,
+			);
+			path = TiqrClientTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A0D74BF273C127100DDD346 /* Tiqr Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A0D74D4273C127300DDD346 /* Build configuration list for PBXNativeTarget "Tiqr Client" */;
+			buildPhases = (
+				0A0D74BC273C127100DDD346 /* Sources */,
+				0A0D74BD273C127100DDD346 /* Frameworks */,
+				0A0D74BE273C127100DDD346 /* Resources */,
+				C773FF2E29265E1B00A82451 /* Set Git Release and Library Version */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tiqr Client";
+			packageProductDependencies = (
+				C76C2EA7299266FF0027420D /* Tiqr */,
+			);
+			productName = Tiqr;
+			productReference = 0A0D74C0273C127100DDD346 /* TiqrClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7F8388B294264C7002015A8 /* TiqrClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F83892294264C7002015A8 /* Build configuration list for PBXNativeTarget "TiqrClientTests" */;
+			buildPhases = (
+				C7F83888294264C7002015A8 /* Sources */,
+				C7F83889294264C7002015A8 /* Frameworks */,
+				C7F8388A294264C7002015A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7F83891294264C7002015A8 /* PBXTargetDependency */,
+			);
+			name = TiqrClientTests;
+			productName = TiqrClientTests;
+			productReference = C7F8388C294264C7002015A8 /* TiqrClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A0D74B8273C127100DDD346 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					0A0D74BF273C127100DDD346 = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+					C7F8388B294264C7002015A8 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 0A0D74BF273C127100DDD346;
+					};
+				};
+			};
+			buildConfigurationList = 0A0D74BB273C127100DDD346 /* Build configuration list for PBXProject "Tiqr Client" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				ja,
+				nb,
+				es,
+				sl,
+				da,
+				fy,
+				sk,
+				sr,
+				fr,
+				nl,
+				ro,
+				hr,
+				pl,
+			);
+			mainGroup = 0A0D74B7273C127100DDD346;
+			packageReferences = (
+				C76C2EA6299266FF0027420D /* XCRemoteSwiftPackageReference "tiqr-app-core-ios" */,
+			);
+			productRefGroup = 0A0D74C1273C127100DDD346 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A0D74BF273C127100DDD346 /* Tiqr Client */,
+				C7F8388B294264C7002015A8 /* TiqrClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A0D74BE273C127100DDD346 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0D74D0273C127300DDD346 /* LaunchScreen.storyboard in Resources */,
+				0AFB380327B2C396004DCE22 /* Localizable.strings in Resources */,
+				0AC5808A273D4CF400364044 /* InfoPlist.strings in Resources */,
+				0A0D74CD273C127300DDD346 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F8388A294264C7002015A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C773FF2E29265E1B00A82451 /* Set Git Release and Library Version */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Git Release and Library Version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\ngit=$(sh /etc/profile; which git)\ngit_release_version=$(\"$git\" rev-parse HEAD)\n\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\n\necho \"git_release_version: $git_release_version\" \n\nread -r -d '' PARSE_PACKAGE_RESOLVED <<EOF\nvar app = Application.currentApplication();\napp.includeStandardAdditions = true;\n\nfunction parseJSON(path) {\n    const data = app.read(path);\n    return JSON.parse(data);\n}\n\nfunction run() {\n    const parsed = parseJSON(\"${PROJECT_FILE_PATH}/project.xcworkspace/xcshareddata/swiftpm/Package.resolved\");\n    return parsed.pins[0].state.revision;\n}\n\nEOF\n\ncore_library_commit=$( osascript -l 'JavaScript' <<< \"${PARSE_PACKAGE_RESOLVED}\" )\n\necho \"core_library_commit: $core_library_commit\" \n\nfor plist in \"$target_plist\"; do\n  if [ -f \"$plist\" ]; then\n    /usr/libexec/PlistBuddy -c \"Set :TIQRGitReleaseVersion $git_release_version\" \"$plist\"\n    /usr/libexec/PlistBuddy -c \"Set :TIQRLibraryVersion $core_library_commit\" \"$plist\"\n  fi\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A0D74BC273C127100DDD346 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0D74C4273C127100DDD346 /* AppDelegate.swift in Sources */,
+				0A0D74C6273C127100DDD346 /* SceneDelegate.swift in Sources */,
+				0A9F8D43274F831D00F24188 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7F83888294264C7002015A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7F8388F294264C7002015A8 /* TiqrClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7F83891294264C7002015A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A0D74BF273C127100DDD346 /* Tiqr Client */;
+			targetProxy = C7F83890294264C7002015A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A0D74CE273C127300DDD346 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A0D74CF273C127300DDD346 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0AC5807B273D4CF400364044 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AC5807C273D4CF400364044 /* de */,
+				0AC5807D273D4CF400364044 /* ja */,
+				0AC5807E273D4CF400364044 /* en */,
+				0AC5807F273D4CF400364044 /* nb */,
+				0AC58080273D4CF400364044 /* es */,
+				0AC58081273D4CF400364044 /* sl */,
+				0AC58082273D4CF400364044 /* da */,
+				0AC58083273D4CF400364044 /* fy */,
+				0AC58084273D4CF400364044 /* sk */,
+				0AC58085273D4CF400364044 /* sr */,
+				0AC58086273D4CF400364044 /* fr */,
+				0AC58087273D4CF400364044 /* nl */,
+				0AC58088273D4CF400364044 /* ro */,
+				0AC58089273D4CF400364044 /* hr */,
+				F55EFD3B2A790FEB001C03CD /* pl */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0AFB380527B2C396004DCE22 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AFB380427B2C396004DCE22 /* en */,
+				0AFB380627B2C39B004DCE22 /* nl */,
+				C7AF85A3292FCB3B00BDEB69 /* hr */,
+				C7AF85A4292FCB3D00BDEB69 /* da */,
+				C7AF85A5292FCB3F00BDEB69 /* fr */,
+				C7AF85A6292FCB4100BDEB69 /* de */,
+				C7AF85A7292FCB4100BDEB69 /* ja */,
+				C7AF85A8292FCB4200BDEB69 /* nb */,
+				C7AF85A9292FCB4300BDEB69 /* ro */,
+				C7AF85AA292FCB4300BDEB69 /* sr */,
+				C7AF85AB292FCB4400BDEB69 /* sk */,
+				C7AF85AC292FCB4500BDEB69 /* sl */,
+				C7AF85AD292FCB4500BDEB69 /* es */,
+				C7AF85AE292FCB4600BDEB69 /* fy */,
+				F55EFD3A2A790FEA001C03CD /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A0D74D2273C127300DDD346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A0D74D3273C127300DDD346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A0D74D5273C127300DDD346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Tiqr/Tiqr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tiqr/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tiqr;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Tiqr uses the camera to scan QR-codes";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Tiqr uses Face ID to login without a PIN";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet;
+				PRODUCT_NAME = TiqrClient;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TIQR_AUTHENTICATION_URL_PATH_PARAMETER = tiqrauth/;
+				TIQR_AUTHENTICATION_URL_SCHEME = tiqrauth;
+				TIQR_ENFORCE_CHALLENGE_HOSTS = "";
+				TIQR_ENROLLMENT_URL_PATH_PARAMETER = tiqrenroll/;
+				TIQR_ENROLLMENT_URL_SCHEME = tiqrenroll;
+			};
+			name = Debug;
+		};
+		0A0D74D6273C127300DDD346 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Tiqr/Tiqr.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tiqr/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tiqr;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Tiqr uses the camera to scan QR-codes";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Tiqr uses Face ID to login without a PIN";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet;
+				PRODUCT_NAME = TiqrClient;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TIQR_AUTHENTICATION_URL_PATH_PARAMETER = tiqrauth/;
+				TIQR_AUTHENTICATION_URL_SCHEME = tiqrauth;
+				TIQR_ENFORCE_CHALLENGE_HOSTS = "";
+				TIQR_ENROLLMENT_URL_PATH_PARAMETER = tiqrenroll/;
+				TIQR_ENROLLMENT_URL_SCHEME = tiqrenroll;
+			};
+			name = Release;
+		};
+		0A11A76B27479DEC0088BEAB /* Release Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Release Test";
+		};
+		0A11A76C27479DEC0088BEAB /* Release Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-test";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Tiqr/Tiqr.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tiqr/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tiqr Test";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Tiqr uses the camera to scan QR-codes";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Tiqr uses Face ID to login without a PIN";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet.testing;
+				PRODUCT_NAME = TiqrClient;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TIQR_AUTHENTICATION_URL_PATH_PARAMETER = tiqrauth/;
+				TIQR_AUTHENTICATION_URL_SCHEME = tiqrtestauth;
+				TIQR_ENFORCE_CHALLENGE_HOSTS = "";
+				TIQR_ENROLLMENT_URL_PATH_PARAMETER = tiqrenroll/;
+				TIQR_ENROLLMENT_URL_SCHEME = tiqrtestenroll;
+			};
+			name = "Release Test";
+		};
+		C77D49F2286F22940024C4A0 /* Debug Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Test";
+		};
+		C77D49F3286F22940024C4A0 /* Debug Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-test";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Tiqr/Tiqr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tiqr/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tiqr Test";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Tiqr uses the camera to scan QR-codes";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Tiqr uses Face ID to login without a PIN";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.2.3;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet.testing;
+				PRODUCT_NAME = TiqrClient;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TIQR_AUTHENTICATION_URL_PATH_PARAMETER = tiqrauth/;
+				TIQR_AUTHENTICATION_URL_SCHEME = tiqrtestauth;
+				TIQR_ENFORCE_CHALLENGE_HOSTS = "";
+				TIQR_ENROLLMENT_URL_PATH_PARAMETER = tiqrenroll/;
+				TIQR_ENROLLMENT_URL_SCHEME = tiqrtestenroll;
+			};
+			name = "Debug Test";
+		};
+		C7F83893294264C7002015A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet.TiqrClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiqrClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TiqrClient";
+			};
+			name = Debug;
+		};
+		C7F83894294264C7002015A8 /* Debug Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet.TiqrClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiqrClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TiqrClient";
+			};
+			name = "Debug Test";
+		};
+		C7F83895294264C7002015A8 /* Release Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet.TiqrClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiqrClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TiqrClient";
+			};
+			name = "Release Test";
+		};
+		C7F83896294264C7002015A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYJ4TZX4UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiqr.surfnet.TiqrClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiqrClient.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TiqrClient";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A0D74BB273C127100DDD346 /* Build configuration list for PBXProject "Tiqr Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0D74D2273C127300DDD346 /* Debug */,
+				C77D49F2286F22940024C4A0 /* Debug Test */,
+				0A11A76B27479DEC0088BEAB /* Release Test */,
+				0A0D74D3273C127300DDD346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A0D74D4273C127300DDD346 /* Build configuration list for PBXNativeTarget "Tiqr Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0D74D5273C127300DDD346 /* Debug */,
+				C77D49F3286F22940024C4A0 /* Debug Test */,
+				0A11A76C27479DEC0088BEAB /* Release Test */,
+				0A0D74D6273C127300DDD346 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F83892294264C7002015A8 /* Build configuration list for PBXNativeTarget "TiqrClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7F83893294264C7002015A8 /* Debug */,
+				C7F83894294264C7002015A8 /* Debug Test */,
+				C7F83895294264C7002015A8 /* Release Test */,
+				C7F83896294264C7002015A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C76C2EA6299266FF0027420D /* XCRemoteSwiftPackageReference "tiqr-app-core-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Tiqr/tiqr-app-core-ios";
+			requirement = {
+				kind = revision;
+				revision = d72cb2ddf33b7534c4d3d2bc2c2b210f795c8128;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C76C2EA7299266FF0027420D /* Tiqr */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C76C2EA6299266FF0027420D /* XCRemoteSwiftPackageReference "tiqr-app-core-ios" */;
+			productName = Tiqr;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0A0D74B8273C127100DDD346 /* Project object */;
+}
