@@ -1,13 +1,14 @@
 {
+  "originHash" : "45dd14921649f6d88d5c666deb980ef2c631b400e7f0527b6a6af45164bfa17a",
   "pins" : [
     {
       "identity" : "tiqr-app-core-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Tiqr/tiqr-app-core-ios",
       "state" : {
-        "revision" : "b48eea1bd040f2935c0a1f71b62ccd6d6bb9bec1"
+        "revision" : "fb6e4a8886cbea532552cb47053a22204e973ef5"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
