@@ -2,24 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>TIQRTokenExchangeURL</key>
-	<string>https://tx.tiqr.org/tokenexchange/?appId=</string>
-	<key>TIQRTokenExchangeEnabled</key>
-	<true/>
-	<key>TIQREnforceChallengeHosts</key>
-	<string>$(TIQR_ENFORCE_CHALLENGE_HOSTS)</string>
-	<key>TIQREnrollmentURLPathParameter</key>
-	<string>$(TIQR_ENROLLMENT_URL_PATH_PARAMETER)</string>
-	<key>TIQRAuthenticationURLPathParameter</key>
-	<string>$(TIQR_AUTHENTICATION_URL_PATH_PARAMETER)</string>
-	<key>TIQREnrollmentURLScheme</key>
-	<string>$(TIQR_ENROLLMENT_URL_SCHEME)</string>
-	<key>TIQRAuthenticationURLScheme</key>
-	<string>$(TIQR_AUTHENTICATION_URL_SCHEME)</string>
-	<key>TIQRGitReleaseVersion</key>
-	<string>?</string>
-	<key>TIQRLibraryVersion</key>
-	<string>?</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -60,6 +42,24 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>TIQRAuthenticationURLPathParameter</key>
+	<string>$(TIQR_AUTHENTICATION_URL_PATH_PARAMETER)</string>
+	<key>TIQRAuthenticationURLScheme</key>
+	<string>$(TIQR_AUTHENTICATION_URL_SCHEME)</string>
+	<key>TIQREnforceChallengeHosts</key>
+	<string>$(TIQR_ENFORCE_CHALLENGE_HOSTS)</string>
+	<key>TIQREnrollmentURLPathParameter</key>
+	<string>$(TIQR_ENROLLMENT_URL_PATH_PARAMETER)</string>
+	<key>TIQREnrollmentURLScheme</key>
+	<string>$(TIQR_ENROLLMENT_URL_SCHEME)</string>
+	<key>TIQRGitReleaseVersion</key>
+	<string>?</string>
+	<key>TIQRLibraryVersion</key>
+	<string>?</string>
+	<key>TIQRTokenExchangeEnabled</key>
+	<true/>
+	<key>TIQRTokenExchangeURL</key>
+	<string>https://tx.tiqr.org/tokenexchange/?appId=</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -77,5 +77,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 </dict>
 </plist>

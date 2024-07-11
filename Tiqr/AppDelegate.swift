@@ -42,13 +42,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         center.requestAuthorization(options: [.alert, .sound]) { granted, error in
             if let error = error {
                 print(error.localizedDescription)
-            } else if granted {
-                DispatchQueue.main.async {
-                    UIApplication.shared.registerForRemoteNotifications()
-                }
             }
         }
-
+        UIApplication.shared.registerForRemoteNotifications()
         if #available(iOS 13, *) { } else {
             self.window = UIWindow(frame: UIScreen.main.bounds)
             self.window?.rootViewController = Tiqr.shared.startWithOptions(options: launchOptions, theme: Theme())
