@@ -36,7 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
         let center = UNUserNotificationCenter.current()
         center.delegate = self
         center.requestAuthorization(options: [.alert, .sound]) { granted, error in
@@ -49,6 +48,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window = UIWindow(frame: UIScreen.main.bounds)
             self.window?.rootViewController = Tiqr.shared.startWithOptions(options: launchOptions, theme: Theme())
             self.window?.makeKeyAndVisible()
+        }
+        if let challenge = RecentNotifications.getLastNotificationChallenge() {
+            Tiqr.shared.startChallenge(challenge: challenge)
         }
         return true
     }
@@ -71,6 +73,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         Tiqr.shared.startChallenge(challenge: url.absoluteString)
         return true
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        if let challenge = RecentNotifications.getLastNotificationChallenge() {
+            Tiqr.shared.startChallenge(challenge: challenge)
+        }
     }
 }
 
@@ -113,5 +121,4 @@ extension AppDelegate {
         Tiqr.shared.registerDeviceToken(token: deviceToken)
         print("Successfully registered for notifications")
     }
-
 }
