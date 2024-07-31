@@ -8,9 +8,5 @@
 	<array>
 		<string>group.org.tiqr.surfnet</string>
 	</array>
-	<key>keychain-access-groups</key>
-	<array>
-		<string>$(AppIdentifierPrefix)$(CFBundleIdentifier)</string>
-	</array>
 </dict>
 </plist>
