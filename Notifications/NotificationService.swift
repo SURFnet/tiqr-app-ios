@@ -6,11 +6,14 @@
 //
 
 import UserNotifications
+import Tiqr
 
 class NotificationService: UNNotificationServiceExtension {
 
     var contentHandler: ((UNNotificationContent) -> Void)?
     var bestAttemptContent: UNMutableNotificationContent?
+    
+    private let appGroup = Bundle.main.object(forInfoDictionaryKey: "TiqrAppGroup") as! String
 
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         self.contentHandler = contentHandler
@@ -19,7 +22,7 @@ class NotificationService: UNNotificationServiceExtension {
         let payload = bestAttemptContent?.userInfo
         let challenge = payload?["challenge"]
         let authenticationTimeout = payload?["authenticationTimeout"]
-        RecentNotifications.onNewNotification(timeOut: authenticationTimeout, challenge: challenge)
+        RecentNotifications(appGroup: appGroup).onNewNotification(timeOut: authenticationTimeout, challenge: challenge)
         contentHandler(bestAttemptContent ?? UNMutableNotificationContent())
     }
     

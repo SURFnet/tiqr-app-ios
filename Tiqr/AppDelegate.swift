@@ -33,7 +33,10 @@ import Tiqr
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
     var window: UIWindow?
+    
+    private let appGroup = Bundle.main.object(forInfoDictionaryKey: "TiqrAppGroup") as! String
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let center = UNUserNotificationCenter.current()
@@ -49,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = Tiqr.shared.startWithOptions(options: launchOptions, theme: Theme())
             self.window?.makeKeyAndVisible()
         }
-        if let challenge = RecentNotifications.getLastNotificationChallenge() {
+        if let challenge = RecentNotifications(appGroup: appGroup).getLastNotificationChallenge() {
             Tiqr.shared.startChallenge(challenge: challenge)
         }
         return true
@@ -76,7 +79,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
-        if let challenge = RecentNotifications.getLastNotificationChallenge() {
+        if let challenge = RecentNotifications(appGroup: appGroup).getLastNotificationChallenge() {
             Tiqr.shared.startChallenge(challenge: challenge)
         }
     }
