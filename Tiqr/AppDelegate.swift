@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    private let appGroup = Bundle.main.object(forInfoDictionaryKey: "TiqrAppGroup") as! String
+    private let appGroup = Bundle.main.object(forInfoDictionaryKey: "TIQRAppGroup") as! String
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let center = UNUserNotificationCenter.current()

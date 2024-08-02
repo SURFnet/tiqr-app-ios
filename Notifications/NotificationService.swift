@@ -13,7 +13,7 @@ class NotificationService: UNNotificationServiceExtension {
     var contentHandler: ((UNNotificationContent) -> Void)?
     var bestAttemptContent: UNMutableNotificationContent?
     
-    private let appGroup = Bundle.main.object(forInfoDictionaryKey: "TiqrAppGroup") as! String
+    private let appGroup = Bundle.main.object(forInfoDictionaryKey: "TIQRAppGroup") as! String
 
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         self.contentHandler = contentHandler
