@@ -235,8 +235,8 @@
 				0A0D74BC273C127100DDD346 /* Sources */,
 				0A0D74BD273C127100DDD346 /* Frameworks */,
 				0A0D74BE273C127100DDD346 /* Resources */,
-				C773FF2E29265E1B00A82451 /* Set Git Release and Library Version */,
 				4F1F4F002C53D02400BBE42F /* Embed Foundation Extensions */,
+				C773FF2E29265E1B00A82451 /* Set Git Release and Library Version */,
 			);
 			buildRules = (
 			);
