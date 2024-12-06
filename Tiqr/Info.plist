@@ -59,7 +59,7 @@
 	<key>TIQRLibraryVersion</key>
 	<string>?</string>
 	<key>TIQRTokenExchangeEnabled</key>
-	<true/>
+	<false/>
 	<key>TIQRTokenExchangeURL</key>
 	<string>https://tx.tiqr.org/tokenexchange/?appId=</string>
 	<key>UIApplicationSceneManifest</key>
