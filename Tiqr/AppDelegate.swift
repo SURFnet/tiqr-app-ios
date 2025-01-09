@@ -53,7 +53,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.makeKeyAndVisible()
         }
         if let challenge = RecentNotifications(appGroup: appGroup).getLastNotificationChallenge() {
-            Tiqr.shared.startChallenge(challenge: challenge)
+            // [TIQR-490] Crash fix:
+            // Give the app some time to initialize the persistentStorage.
+            // That would normally be done on the main thread, but challenges are checked on a background thread.
+            // If we would do this too soon, then the persistentStorage would be initialized on the background thread, and that could lead to sporadic crashes
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
+                Tiqr.shared.startChallenge(challenge: challenge)
+            })
         }
         return true
     }
